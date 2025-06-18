@@ -22,9 +22,6 @@ const TweetSchema = new mongoose.Schema({
   },
 });
 
-const UserSchema = new mongoose.Schema({});
-
 // we have to define it this way because of hot reloading
 export const Tweet =
   mongoose.models.Tweet ?? mongoose.model("Tweet", TweetSchema);
-export const User = mongoose.models.User ?? mongoose.model("User", UserSchema);
